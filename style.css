@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header,
+.main {
+  padding: 20px 40px;
+}
+
+.header {
+  text-align: center;
+  background-color: #889eb6;
+  padding: 40px 100px 60px 100px;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+}
