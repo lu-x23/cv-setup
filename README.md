@@ -1,1 +1,1 @@
-This task serves the function of learning basic html.
+The content of this repository serves the function of learning basic html & css.
