@@ -5,6 +5,7 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
+  border-color: #717f8f;
 }
 
 h1,
@@ -13,26 +14,39 @@ h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+main {
+  background-color: ghostwhite;
+}
+
 .header,
 .main {
   padding: 20px 40px;
-  font-size: medium;
   color: #2e2e2e;
 }
 
 .header {
   text-align: center;
   background-color: #93a4b8;
-  padding: 40px 100px 60px 100px;
+  padding: 40px 100px 55px 100px;
   font-weight: 600;
+  font-size: medium;
 }
 
-.main {
+.subheader {
+  margin: 20px;
+}
+
+.subheader::after {
+  content: "😼";
+  margin-left: 7px;
+}
+.main-content {
   max-width: 800px;
   margin: 0 auto;
+  font-weight: 450;
 }
 
-main > * {
+.main-content > * {
   margin: 50px 0px;
 }
 
@@ -59,4 +73,9 @@ article + article {
   border-width: 2px 0px 0px 0px;
   border-style: solid;
   padding: 20px 0 0 0;
+}
+
+::selection {
+  background-color: #2e2e2e;
+  color: ghostwhite;
 }
