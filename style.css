@@ -82,3 +82,9 @@ main {
   background-color: #2e2e2e;
   color: ghostwhite;
 }
+
+.heading-exp,
+.subheading-exp {
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
