@@ -18,7 +18,7 @@ h3 {
 }
 
 main {
-  background-color: ghostwhite;
+  background-color: #f8f8ff;
 }
 
 .header,
@@ -30,7 +30,7 @@ main {
 .header {
   text-align: center;
   background-color: #93a4b8;
-  padding: 40px 100px 55px 100px;
+  padding: 50px 100px 60px 100px;
   font-weight: 600;
   font-size: medium;
 }
@@ -50,7 +50,7 @@ main {
 }
 
 .main-content > * {
-  margin: 50px 0px;
+  margin: 25px 0 0 0;
 }
 
 .nav > .link {
@@ -67,24 +67,42 @@ main {
 }
 
 .link:active {
-  color: ghostwhite;
+  color: #f8f8ff;
   font-weight: 700;
 }
 
+.site-article {
+  padding: 0px 20px;
+}
 .site-article + .site-article {
   border-color: #717f8f;
   border-width: 2px 0px 0px 0px;
   border-style: solid;
-  padding: 20px 0 0 0;
+  padding-top: 20px;
 }
 
 ::selection {
   background-color: #2e2e2e;
-  color: ghostwhite;
+  color: #f8f8ff;
 }
 
 .heading-exp,
 .subheading-exp {
   display: inline-block;
   margin: 0 5px 0 0;
+}
+
+.heading-article {
+  position: relative;
+  left: -20px;
+}
+
+.badge {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-color: #e9b579;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
 }
