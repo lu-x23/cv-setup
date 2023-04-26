@@ -23,16 +23,26 @@ main {
 }
 
 .header,
-.main {
+.main,
+.footer {
   padding: 1.5rem 2.5rem;
   color: #2e2e2e;
 }
 
 .header {
   text-align: center;
-  background-color: #93a4b8;
+  background-image: linear-gradient(0deg, #93a4b857 10%, #aeafb1bb 80%);
   padding: 3rem 4rem 3.5rem 4rem;
   font-weight: 600;
+}
+
+.footer {
+  text-align: center;
+  background-image: linear-gradient(
+    180deg,
+    rgba(178, 200, 224, 0.288) 0%,
+    #aeafb1c2 80%
+  );
 }
 
 .heading-div {
@@ -140,11 +150,11 @@ main {
   .page-article {
     margin: 0 0 1rem 0;
   }
-
   .nav {
     flex-direction: row;
     justify-content: center;
   }
+
   .header-exp {
     display: flex;
     flex-direction: row;
@@ -163,7 +173,6 @@ main {
   .page-article {
     margin: 0 0 3rem 0;
   }
-
   .nav {
     flex-direction: row;
     justify-content: center;
