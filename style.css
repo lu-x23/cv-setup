@@ -12,6 +12,7 @@ html {
   --color-accent: #717f8f;
   --color-accent-light: #717f8f93;
   --color-button: #e9b579;
+  --color-button-hover: #e49439;
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -20,6 +21,7 @@ html {
     --bg-color-main: #202029;
     --font-color-light: #c4c4c4;
     --color-button: #2c486893;
+    --color-button-hover: #0e6e6e93;
     --color-accent: #63707e;
     --color-accent-light: #717f8f93;
   }
@@ -49,7 +51,6 @@ main {
 }
 
 .header {
-  font-family: ;
   text-align: center;
   background: radial-gradient(
     circle,
@@ -167,6 +168,18 @@ main {
   border-style: solid;
   border-color: var(--font-color);
   border-width: 0.17rem;
+  opacity: 0.5;
+  transition: 200ms ease;
+}
+
+.header:focus-within .badge,
+.header:hover .badge {
+  transform: scale(110%);
+  opacity: 1;
+}
+
+.badge:hover {
+  background-color: var(--color-button-hover);
 }
 
 @media screen and (min-width: 750px) {
