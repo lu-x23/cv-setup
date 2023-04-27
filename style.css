@@ -3,10 +3,11 @@
 }
 
 html {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 15px;
   --bg-color-main: #e9e9e9;
-  --font-color: #2e2e2e;
+  --font-color: #0e0707;
   --font-color-light: #525252;
   --color-accent: #717f8f;
   --color-accent-light: #717f8f93;
@@ -33,7 +34,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Anuphan", sans-serif;
 }
 
 main {
@@ -48,6 +49,7 @@ main {
 }
 
 .header {
+  font-family: ;
   text-align: center;
   background: radial-gradient(
     circle,
@@ -100,9 +102,14 @@ main {
 }
 
 .nav > .link {
-  margin: 0 0.1rem 0 0.1rem;
+  margin: 0 0.3rem 0 0.3rem;
   color: var(--font-color-light);
-  text-underline-offset: 0.15rem;
+  text-underline-offset: 0.2rem;
+  border: 3px solid transparent;
+}
+
+.nav > .link:focus {
+  border: 3px dotted var(--color-accent-light);
 }
 
 .link {
@@ -112,10 +119,6 @@ main {
 .link:hover {
   background-color: var(--color-accent);
   color: var(--bg-color-main);
-}
-
-.link:active {
-  font-weight: 700;
 }
 
 .page-article {
@@ -218,4 +221,20 @@ main {
   .nav {
     display: none;
   }
+}
+
+a:link {
+  color: var(--font-color-light);
+  text-underline-offset: 0.2rem;
+  border: 3px solid transparent;
+  transition: background-color 500ms ease, color 200ms ease;
+}
+
+a:hover,
+a:active {
+  color: var(--color-accent-light);
+}
+
+a:focus {
+  border: 3px dotted var(--color-accent-light);
 }
